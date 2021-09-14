@@ -26,18 +26,31 @@ public class MainSistema {
 		System.out.println("3. SALIR");
 		System.out.println("***********************************");
 		
-		}else {
+		}else if {
 			System.out.println("Clave Incorrecta, Ingrese su clave");
-			
-		if(opcion==1) {
+		
+	
+		}if  (opcion==2){
 			System.out.println("Ingresar cuenta de destino:");
-			int cuenta = in.nextInt();
-			System.out.println("Ingrese el monto");
-			String monto = in.nextLine();
-			
-		}else{ 
+    		String cuenta = in.nextLine();
+    		System.out.println("Ingresar monto a transferir:");
+    		int montoTransferir = in.nextInt();
+    		int saldo = 2500;
+    		int nuevoSaldo = 2500-dineroTransferir;
+    		System.out.println("Su nuevo saldo es: "+ nuevoSaldo);
+    		System.out.println();
+    	    System.out.println("*********************************");
+    	    System.out.println("BANCO PICHINCHA: elija una opcion");
+    	    System.out.println("1. Consultar pagos");
+    	    System.out.println("2. Realizar transeferencia");
+    	    System.out.println("3. SALIR");
+    	    System.out.println("*********************************");
+    	    opcion = teclado2.nextInt();
 		}
-			
+		}
+	
+	if (opcion==3) {
+    	System.out.println("Saliendo del sistema: ");
 //
 //			A partir del monto ingresado se debe realizar una resta del saldo disponible (se debe asumir que el saldo disponible es $1000), y presentará un mensaje indicando el nuevo saldo luego de la resta:
 //
